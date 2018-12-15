@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+    <!-- Load jquery, bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Custom CSS End -->
+
   </head>
   <body>
-    <h1>Samuel Denton Co-op Work Term Report</h1>
 
-    <h2>Introduction</h2>
 
-    <h2>About The Employer</h2>
+      <div class="imageTitle">
+        <div>
+          <div class="Title_Text"><h1 id="nameTag"><strong>Samuel Denton</strong></h1><h4>University of Guelph: Computer Science</h4></div>
+        </div>
+      </div>
 
-    <h2>Job Description</h2>
+      <div class="button-panel">
+        <ul>
+          <button type="button" id="navButton" onclick="change_page_introduction()">Introduction</button>
+          <button type="button" id="navButton" onclick="change_page_about_me()">About Me</button>
+          <button type="button" id="navButton" onclick="change_page_coop_1()">Work Term</button>
+          <button type="button" id="navButton" onclick="change_page_resume()">Resume</button>
+          <button type="button" id="navButton" onclick="change_page_contact()">Contact Me</button>
+        </ul>
+      </div>
 
+      <!-- Leave me at the bottom of body -->
+      <script src="app.js"></script>
   </body>
 
 </html>

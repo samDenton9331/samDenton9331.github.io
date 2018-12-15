@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <script>
+      document.body.className += " fade-out";
+    </script>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="" onclick="change_page_home()">Home</a>
+          </li>
+          <li class="nav-item disabled">
+            <a class="nav-link" href="">Introduction</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="" onclick="change_page_about_me()">About Me</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="" onclick="change_page_coop_1()">Work Terms</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="" onclick="change_page_resume()">Resume</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="" onclick="change_page_contact()">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <!--
+            <li class="nav-item">
+                <a class="nav-link" href="">Instagra</a>
+            </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Samuel Denton</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="introduction">
+        <h2>Introduction</h2>
+        <hr />
+        <p>
+          Hey There! My name is Samuel Denton and I am currently enrolled in the
+          Computer Science Co-Op Program at the University of Guelph. I have
+          successfully completed two full years of school in this program, more recently I
+          have just finished my first 8 month Co-op at Canada Border Services
+          Agency.
+        </p>
+        <p>
+          The purpose of this website is to tell everyone a bit about me and
+          to share my Co-Op Experiences with you! I am very excited about Co-op and how
+          it has given me the chance to get hands-on experience in the world of IT.
+        </p>
+      </div>
+    </div>
+
+    <div class = "navigation_pictures">
+      <img class="coop_1_vanier_tower" src = "images/vanier_tower.png"/>
+      <h2 class = "word_over_picture">Work Terms</h2>
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+
+</html>

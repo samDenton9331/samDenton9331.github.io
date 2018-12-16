@@ -1,0 +1,138 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.button-panel {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 2000ms opacity;
+}
+
+button {
+
+}
+
+.imageTitle {
+  /* Full height */
+  background-image: url("images/cottage_2.png");
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+.darken-overlay div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+} */
+
+
+.Title_Text {
+  position: absolute;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  right: 15%;
+  top: 25%;
+
+  opacity: 0;
+  transition: 2000ms opacity;
+}
+
+#nameTag {
+  font-family: "Bebas Neue", "Times New Roman", serif;
+  font-size: 60px;
+}
+
+#navButton {
+  border-radius: 20px;
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  margin: 0 20px 0 0;
+  vertical-align: top;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 22px;
+  font-family: "Bebas Neue", "Times New Roman", serif;
+}
+
+#navButton:hover {
+  opacity: 1.2;
+}
+
+.right {
+  text-align: right;
+}
+
+/* Introduction page */
+.introduction {
+  text-align: center;
+  padding-top: 10px;
+}
+
+hr {
+  border-color: red;
+  background-color: red;
+}
+
+.line {
+  background-image: url("images/red_line.jpg");
+  height: 100px;
+}
+
+.navigation_pictures {
+  padding-top: 20px;
+  position: absolute;
+  left: 40%;
+}
+
+.word_over_picture {
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  color: white;
+}
+
+/* Coop 1 Page */
+.coop_1_vanier_tower {
+  width: 300px;
+  height: auto;
+}
+
+.coop_1_title {
+  text-align: left;
+  padding-top: 10px;
+}
+
+#center {
+  text-align: center;
+}

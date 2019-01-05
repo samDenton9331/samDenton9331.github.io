@@ -26,6 +26,11 @@ button {
 
 }
 
+iframe {
+   display: block;
+   margin: 0 auto;
+}
+
 .imageTitle {
   /* Full height */
   background-image: url("images/cottage_2.png");
@@ -126,6 +131,17 @@ hr {
 .coop_1_vanier_tower {
   width: 300px;
   height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team_photo {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .coop_1_title {

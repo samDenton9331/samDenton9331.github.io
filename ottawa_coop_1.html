@@ -55,46 +55,94 @@
     <div class="container">
       <div class="coop_1_title">
         <h2 id = "center">Canada Border Services Agency</h2>
-        <h4 id = "center">Production Assurance</h4>
+
         <hr />
         <p>
           For my first Co-op I completed a 8-month work term at Canada Border Service Agency in their HQ offices. Working
-          for the border is a very important job, millions of people come into Canada everyday through our land points of entry, or through
-          an Airport. It is important for Canada to process all of the people coming into Canada to ensure the safety of the country.
+          for the border is a very important job. Millions of people come into Canada everyday through our borders, by land points of entry,
+          or through an Airport. Canada's Border officers make use of new technology to process people coming into Canada, they are constantly querying databases
+          to check travellers information against different databases.  It is extremely important for Canada to process all of people coming into our country. This
+          ensures the safety of our country and its citizens by verifying a person is not dangerous before entering the country.
         </p>
 
-        <h4 id = "center">Job Description</h4>
+        <div class = "center">
+          <img class="coop_1_vanier_tower" src = "images/vanier_tower.png"/>
+        </div>
+        <br/>
+        <h4 id = "center">Production Assurance</h4>
         <hr />
         <p>
-          My role while at the CBSA was to be a member of the Software Production Assurance team. The role of our team
-          within the agency is to test various releases affecting the Lines of Business Border operations deal with.
-          I was given the honour of being taught valuable software testing techniques from members of my team, and my team lead,
-          and was able to ensure quality products were delieved to the real world.
+          My first Co-op was to be a member of the Production Assurance team in CBSA's Enterprise Services Directive.
+          Within border crossings their is mainly two categories Border Officers must process before allowing entry into Canada.
+          The first category is Travellers, people coming into Canada to visit, work, study, or immigrate, the other category is cargo, goods that we import from other countries.
+          Travellers and cargo can come into Canada in three ways, either by land in a vehicle, by air, landing in one of Canada's Airports, or by sea, docking in a harbour.
+          Technology is a huge factor in border operations to make entering into Canada quicker and enables us to protect the country against threats.
+          We make use of programs such as NEXUS and FAST, where people entering or exiting Canada on a regular bases can be pre-approved and cross through
+          borders very quickly.
+
+          The role of the PA team within the agency is to test various Lines of Business CBSA uses in daily Border operations and online. Within my team
+          we focused on the Travellers category and did not deal with any applications used for cargo.
+          The main goal of a software tester is to test given product and to track results of prepared test cases. When a test case did not return
+          the expected result we had to report defects through a web application called JIRA. One of the most exciting projects I got to work on
+          during my Co-op was the Primary Inspection Kiosk. PIK plays a very important role in major Airport, such as Toronto Pearson Internation Airport.
+        </p>
+
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2Y1Ozcmgey8"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br/>
+        <p id = "center">
+          <strong id="center">My Role</strong>
+        </p>
+        <p>
+          At a high level, we had to create data for travellers and then simulate passages through Airport Kiosks to make sure foreign travellers are correctly refered
+          to Secondary processing or if they can be released, depending on permits. To do this I had to learn how to create the data using a specific type of file structure
+          and then push the data to the database. I got to learn how to make use of some of IBM's COTS products to assist in making data, after data was inserted I
+          had to verify the data using SQL on various tables. We had to make sure the individual sets of data contained all permutations for the different types of permits a traveller could have.
+          When I first started creating the data it was very tedious and time consuming.
+
+          Suddenly I had a very good idea, I could I create an applocation to automate inserting the desired data into the specific file format.
+          I created a Java application that read data from a Excel speeadsheet and then wrote that data into a XML file that could then be injected into the database.
+          This tool had the potential to be very useful, it could create a data file for us in seconds that would otherwise take a long time for us to make manually.
+          Furthermore, it could make all permutations the tester needed, and it reduced room for error that was there when typing data by hand.
+          My team lead and other team leads were very impressed with my work and a lot of people wanted to make use of my Java tool.
+          I then gave a boardroom presentation to the team members of Production Assurance along with individual demos to other testers and developers.
         </p>
 
         <p>
-          Canada Border offered a wonderful tour of the airport through the student experience office that allowed me to
-          see the software I tested in their production enviroments. I also visited a CBSA Lab where they conduct reaseach to further
-          better our agency and improve our operations.
+          My first Co-op experience taught me alot, I was able to design and create something from scratch that could increase productivity of data creation, a major step
+          during testing efforts within the team. This would be the first time in my career as a software developer where I thought outside the box to create something that was going to make other people's jobs easier.
+          I think this is what Co-op is meant to do, it puts you in a unique position where you can experience many firsts. I was able to work on very cool projects
+          that almost every person who enters or exits will come across in some shape or form. Furthermore, I think this is a good experience for the Government of Canada because
+          it gives a younger, fresher point of view on concepts and could lead to better products in the future.
         </p>
 
         <h4 id = "center">My Goals</h4>
         <hr />
         <p>
-          The role of software testing was very new to me and I knew it would be a challenge to get up to speed with the rest
-          of the team when I first started. I set goals that I wanted to acheive in order to truly enhance my first Co-op experience. 
+          The role of software testing was very new to me, I knew it was going to be a challenge to get myself into the right state of mind to be a successful tester.
+          I set goals that I wanted to acheive in order to truly enhance my first Co-op experience.
+          I knew that learning the key concepts of how to properly test software would enhance the quality of code i write.
         </p>
 
-        <h4 id = "center">Exploring Ottawa</h4>
+        <h4 id = "center">Acknowledgements</h4>
         <hr />
         <p>
-          This was a exciting job for me because it would be the first time I got to go to Canada's beautiful
-          capital city, Ottawa. Outside of work I was able to explore Ottawa through the many bike trails avaliable
-          and ventured to Quebec to explore Gatineau Park.
-        </p>
-      </div>
-    </div>
+          I was given the honour of being taught valuable software testing techniques from members of my team, and my team lead,
+          and was able to ensure quality products were delieved to the real world. I feel I was able to reach many of my goals over the course of my 8-month term. I learned
+          good software testing methodologies and was taugt that a structured, thought out approach to a task makes the outcome better. I would like to give my appreciation
+          to my Team Lead, Sonia Cotrut, along with everyone else who I worked with. I was able to work well with everyone I came across and saw the Intangable benefit of
+          good teamwork. Even when I encountered a difficult problem or faced with a new situation, so many people at CBSA were willing to help out. I was able to talk
+          to many different people with large IT backgrounds that gave me amazing insights into my future career goals. I was also able to interact with students in IT as well
+          as other departments of CBSA. Speaking with people with different backgrounds and different experiences makes me think about what I want out of my career in the future differently.
 
+        </p>
+        <div class = "center">
+          <img class="team_photo" src = "images/pa_team_photo.png"/>
+        </div>
+
+      </div>
     <script src="app.js"></script>
   </body>
 </html>

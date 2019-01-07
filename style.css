@@ -11,6 +11,10 @@ body.fade-out {
     transition: none;
 }
 
+a {
+  color: white;
+}
+
 .button-panel {
   position: absolute;
   text-align: center;
@@ -21,6 +25,17 @@ body.fade-out {
   opacity: 0;
   transition: 2000ms opacity;
 }
+
+.footer-resume {
+  position: relative;
+  height: 40px;
+  margin-top: -40px;
+}
+
+.expand-height {
+  height: 100%;
+}
+
 
 button {
 
@@ -147,6 +162,11 @@ hr {
 .coop_1_title {
   text-align: left;
   padding-top: 10px;
+}
+
+.white-center {
+  color: white;
+  text-align: center;
 }
 
 #center {

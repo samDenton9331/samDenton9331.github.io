@@ -30,6 +30,16 @@ function pageLoaded() {
   setTimeout(function(){
     document.querySelector(".button-panel").style.opacity = 1;
   }, 2000);
+  document.body.className = document.body.className.replace("fade-out","");
+
+  try {
+    document.querySelector(".Title_Text").style.opacity = 1;
+    setTimeout(function(){
+      document.querySelector(".button-panel").style.opacity = 1;
+    }, 2000);
+  } catch (error) {
+    console.log("not the title page");
+  }
 
 }
 

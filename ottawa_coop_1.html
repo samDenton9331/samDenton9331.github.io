@@ -12,75 +12,158 @@
   </head>
   <body>
     <script>
-      document.body.className += " fade-out";
-    </script>
+    document.body.className += " fade-out";
+</script>
 
-    <!-- Navigation Bar at the top of the psge -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="" onclick="change_page_home()">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="" onclick="change_page_introduction()">Introduction</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="" onclick="change_page_about_me()">About Me</a>
+            <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
           </li>
           <li class="nav-item disabled">
-            <a class="nav-link">Work Terms</a>
+            <a class="nav-link" href="#" >Work Terms</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="" onclick="change_page_resume()">Resume</a>
+            <a class="nav-link" href="#" onclick="change_page_resume()">Resume</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="" onclick="change_page_contact()">Contact Me</a>
+            <a class="nav-link" href="#" onclick="change_page_contact()">Contact Me</a>
           </li>
         </ul>
       </div>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-          <!--
-            <li class="nav-item">
-                <a class="nav-link" href="">Instagra</a>
-            </li>
-          -->
           <li class="nav-item">
-            <a class="nav-link disabled" href="">Samuel Denton</a>
+            <a class="nav-link disabled" href="#">Samuel Denton</a>
           </li>
         </ul>
       </div>
     </nav>
 
-
     <div class="container">
       <div class="coop_1_title">
         <h2 id = "center">Canada Border Services Agency</h2>
-        <h4 id = "center">Production Assurane</h4>
+
         <hr />
         <p>
-          For my first Co-op I completed a 8-month work term at Canada Border Service Agency in their HQ offices.
-          My role while at the CBSA was to be a member of the Software Production Assurance team. The role of our team
-          within the agency is to test various releases affecting the Lines of Business Border operations deal with.
-          I was given the honour of being taught valuable software testing techniques from members of my team, and my team lead,
-          and was able to ensure quality products were delieved to the real world.
+          For my first Co-op I completed an 8-month work term at Canada Border Service Agency in their HQ offices. Working for the border is a very important job. Millions of people come into Canada everyday using our land points of entry, by sea, or by air landing at an Airport. Canada's Border officers make use of technology 24 hours a day to process people coming into Canada, they are constantly querying databases to check traveller's information against different databases.  It is extremely important for Canada to process all people entering through the border. We can protect our country and its citizens better by verifying a person is not a potential threat before letting them enter.
+        </p>
+
+        <div class = "center">
+          <img class="coop_1_vanier_tower" src = "images/vanier_tower.png"/>
+        </div>
+        <p id="center"><strong>CBSA HQ, Ottawa, On.</strong></p>
+        <br/>
+        <h4 id = "center">Production Assurance</h4>
+        <hr />
+        <p>
+          In the CBSA I joined the Production Assurance team in CBSA's Enterprise Services Directive to verify these technologies Border Officers use everyday work as expected. Within a border crossing there are two different things border officers must process or check before allowing them to enter Canada. The first is Travellers, people coming into Canada to visit, work, study, or immigrate, the other is cargo, goods that we import from other countries. Travellers and cargo can come into Canada in three different ways, either by land in a vehicle, by air, landing in one of Canada's Airports, or by sea, docking in a harbour. Technology is a huge factor in border operations, it enables processing to be completed quicker and helps us protect the country against potential threats. Additionally, people can make use of programs such as NEXUS and FAST, where people entering or exiting Canada on a regular basis can be pre-approved and cross through borders very quickly simply by showing a card.
+          The role of the PA team within the agency is to test various Lines of Business that CBSA uses in daily Border operations. Within my team we focus on travellers, people entering and exiting Canada.
+          The main goal of a software tester is to test a given product or release and to track the results of prepared test cases. When a test case did not return the expected result, we had to report defects through a web application called JIRA. We would track the progress of the defect, providing any help we could to the developers, and then we would close the ticket once the defect has been fixed.
 
         </p>
         <p>
-          Canada Border offered a wonderful tour of the airport through the student experience office that allowed me to
-          see the software I tested in their production enviroments. I also visited a CBSA Lab where they conduct reaseach to further
-          better our agency and improve our operations.
+          <strong>My Role</strong>
         </p>
-
         <p>
-          This was a exciting job for me because it would be the first time I got to go to Canada's beautiful
-          capital city, Ottawa. Outside of work I was able to explore Ottawa through the many bike trails avaliable
-          and ventured to Quebec to explore Gatineau Park.
+            One of the most exciting projects I got to work on during my Co-op was the Primary Inspection Kiosk. PIK plays a very important role in major Airports, such as Toronto Pearson International Airport. Thousand of people use the PIK Kiosks everyday, it is important the software is updated and maintained regularly. This Kiosk is designed to be the first step when a traveller steps off the plane at an airport and allows the traveller to scan their passport and declare what they have brought with them. Have a look at the video below to gain more information about PIK, perhaps you have recently used this Kiosk during your travels.
         </p>
 
+        <br/>
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2Y1Ozcmgey8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br/>
+        <p>
+          At a high level, we had to create data for travellers and then simulate passages through Airport Kiosks to make sure foreign travellers are correctly referred to Secondary processing or if they can be released, depending on permits. To do this I had to learn how to create the data using a specific type of file structure and then push the data to the database. I got to learn how to make use of some of IBM's COTS products to assist in making data. After the data was inserted, I had to verify the data using SQL commands on various tables. We had to make sure the individual sets of data contained all permutations for the different types of permits a traveller could have.
+          At first, I had to create the data manually, which was very tedious and time consuming. Suddenly I had a very good idea, I could create an application that automated inserting desired data into the specific file format. After consulting with my team lead and purposing the idea, I created a Java application that read data from an Excel spreadsheet, then it wrote that data into a XML file that could be injected into the testing database. This tool has the potential to be very useful, it could create a data file for us in seconds that would otherwise take longer to make manually. Furthermore, the Excel sheet made it easier to create all permutations the tester needed, and it reduced room for error that was there when typing data by hand. My team lead and other team leads were very impressed with my work and a lot of people started to make use of my Java tool. I then gave a boardroom presentation to the team members of Production Assurance along with individual demos to other testers and developers. Giving a presentation to my colleagues and sharing my work with them was very important to me and seemed like the best possible way to end my work term.
+        </p>
+        <p>
+I also worked on testing the NEXUS enrolment system along with the NEXUS Kiosk used along side PIK. NEXUS is a program for Canadians and Americans in which they can be pre-screened and interviewed to make navigating through Airport border security quicker. I tested the enrolment component which is a web-application for capturing the client’s information. If the client is approved for the enrolment after an interview, they are granted a NEXUS card. The card can be scanned at a Kiosk and then the client would scan his/her irises. Testing the Iris scanner was very exciting because it is a very new technology the border is implementing. When cannabis legalization came into effect, I had to run tests to verify the Kiosk flagged people who had Cannabis Hits associated with them to make sure they would be directed to visit an Officer for further questions.
+        </p>
+<br/>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8aQ7EkD9TfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br />
+        <p>
+          My first Co-op experience taught me a lot, I was able to design and create something from scratch that could increase productivity of data creation, a major step during testing efforts within the team. This would be the first time in my career as a software developer where I thought outside the box to create something that was going to make other people's jobs easier. I believe this is what Co-op is meant to do, it puts you in a unique position where you can experience many firsts. I was able to work on very cool projects that almost every person who enters or exits Canada will come across in some shape or form. Furthermore, I think this was a good experience for the Government of Canada because it gave a younger, fresher point of view on concepts and ideas that could lead to better products in the future.
+        </p>
+
+        <h4 id = "center">My Goals</h4>
+        <hr />
+        <p>
+        This being my very first Co-op, as well as my first job in an IT office, I knew there was going to be a steep learning curve. In my first two years in Computer Science I have been developing my own code and doing my own testing.  In school they do not teach you how to test software, so going into a Production Assurance job would be difficult. I wanted to be an agile learner in order to be an asset to my team as fast as I could. I set many goals for myself and I feel over the 8 months I worked at the CBSA I accomplished them.
+        </p>
+        <p>
+        Probably the biggest part of being a software tester is analysing the documents provided to you for a given release and then come up with various test cases to validate the application. One of my main goals was learning how to write meaningful, useful, test cases. I learned the format for writing test cases that was commonly used in the government. I was able to see test cases written by other people on my team and learn how they should be properly done. I got hands on experiences with programs like SOAP UI which we used for functional testing of web services. I got to create my own scripts for testing that covered multiple permutations.
+        </p>
+        <p>
+        This was the first position where I had to make critical decisions on my own on what had to be done. My team lead put trust in me and did not micro manage me at all. I was very fortunate to have that luxury and I did not want to let her down. I had to create my own Test Plans for a given release and submit it to release management. I had to think for myself and estimate how many days it would take to test a release. The decisions that I made, either on my own or within a small team, impacted the overall schedule of the production date. This gave me a great sense of responsibility and I felt like what I did mattered. I found a great deal of confidence in myself toward the end of my 8-month term and the things I did were really making an impact.
+        </p>
+        <p>
+        Another skill I got a chance to improve was how to work well within a team in an IT environment. When testing a certain release, it was common practice to have two or more people testing. This proved very useful when writing and executing test cases because it allowed us to brainstorm the best approach to a specific project and gave the opportunity to cover more. I believe this is the biggest skill someone can learn, and it will always be necessary to work in a team at some point in any given job.
+        </p>
+
+        <h4 id = "center">Acknowledgements</h4>
+        <hr />
+        <p>
+          I was given the honour of being taught valuable software testing techniques from members of my team, and my team lead. Through these teachings I was able to ensure quality products were delivered to the real world. I feel I was able to reach many of my goals over the course of my 8-month term. I learned good software testing methodologies and learned that a structured, thought out approach to a task, make the result much more credible. I would like to give my appreciation to my Team Lead, Sonia Cotrut, along with everyone else who I worked with. I was able to work well with everyone I came across and saw the incredible benefit of good teamwork. Even when I encountered a difficult problem or faced with a new situation, my teammates at CBSA were always willing to help. I was able to talk to many different people with large IT backgrounds that gave me amazing insights into my future career goals. I was also able to interact with students in IT as well as other departments of CBSA. Speaking with people with different backgrounds and different experiences made me think about what I want out of my career in the future differently. I plan to return to Canada Border for my next work term and become a software developer in their mobile applications team!
+
+        </p>
+        <div class = "center">
+          <img class="team_photo" src = "images/pa_team_photo.png"/>
+        </div>
+        <p id="center"><strong>CBSA Production Assurance Team</strong></p>
+
+
+        <h4 id = "center">Conclusion</h4>
+        <hr />
+        <p>
+          My time at CBSA in the PA team was amazing and I saw true potential in a career in the Public Service. I got to experience Ottawa for the first time, a year ago I never would have thought I would be living in Ottawa. I am very excited for what the future holds for me and where my next adventure will take me!
+        </p>
+        <br/>
+        <br/>
       </div>
-    </div>
+
+    <footer>
+      </div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
+              </li>
+              <li class="nav-item disabled">
+                <a class="nav-link">Work Terms</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="change_page_resume()">Resume</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#" onclick="change_page_resume()">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link disabled">Samuel Denton</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">(226) 374-5036</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" >sdenton@uoguelph.ca</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="white-center">Made With Bootstrap 2019 - Hosted through GitHub Pages</div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html>

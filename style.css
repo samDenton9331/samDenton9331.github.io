@@ -19,11 +19,20 @@ a {
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 90%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: 2000ms opacity;
+}
+
+.title_buttons {
+  font-size: 22px;
+  
+  margin: 10px;
+  width: 15%;
+  /* background-color: white; */
+  color: white;
 }
 
 .footer-resume {
@@ -48,7 +57,7 @@ iframe {
 
 .imageTitle {
   /* Full height */
-  background-image: url("images/cottage_2.png");
+  background-image: url("images/cottage_2.jpg");
   height: 100%;
   width: 100%;
   /* Center and scale the image nicely */
@@ -57,11 +66,6 @@ iframe {
   background-size: cover;
 }
 
-.title_buttons {
-  font-size: 18px;
-  margin: 10px;
-  width: 10%;
-}
 /*
 .darken-overlay div {
   position: absolute;

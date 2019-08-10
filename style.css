@@ -184,5 +184,10 @@ hr {
 
 .resume-pdf {
   width:100%;
-  height:920px;
+  height:800px;
 }
+
+.resumeDoc {
+  margin: 20px 0;
+}
+

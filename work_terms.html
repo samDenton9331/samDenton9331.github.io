@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
 
-    <!-- Latest compiled and minified CSS    -->
-    <link rel="stylesheet" href="css/bootstrap.css">
+<head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Custom CSS End -->
+  <!-- Latest compiled and minified CSS    -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Custom CSS End -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
 
-  </head>
-  <body>
-    <script>
-      document.body.className += " fade-out";
-    </script>
+<body>
+  <script>
+    document.body.className += " fade-out";
+  </script>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
-          </li>
-          <li class="nav-item disabled">
-            <a class="nav-link" href="#" >Work Terms</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#" onclick="change_page_contact()">Contact Me</a>
-          </li>
-        </ul>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
+        </li>
+        <li class="nav-item disabled">
+          <a class="nav-link" href="#">Work Terms</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="change_page_contact()">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Samuel Denton</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container fullScreen">
+
+    <h2 class="pageTitle">My Work Terms</h2>
+    <hr />
+
+    <div class="row  justify-content-around">
+
+      <div class="col-lg-4 workTermCard">
+        <a onclick="change_page_coop_1()">
+          <div class="card workTerm">
+            <img src="images/vanier_tower.png" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Production Assurance</h5>
+              <p class="card-text">
+                <strong>Canada Border Services Agency</strong>
+              </p>
+              <p class="card-text">
+                A blog about my 8 month Co-op as a Software Tester for Canada Border Services Agency
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Samuel Denton</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
+      <div class="col-lg-4 workTermCard">
+        <a onclick="change_page_coop_3()">
+          <div class="card workTerm">
+            <img src="images/vanier_tower.png" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Jr. Software Developer</h5>
+              <p class="card-text">
+                <strong>Canada Border Services Agency</strong>
+              </p>
+              <p class="card-text">
+                A blog about my 4 month Co-op as a Jr. Software Developer for Canada Border Services Agency
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
-            </li>
             <li class="nav-item disabled">
-              <a class="nav-link" href="#" >Work Terms</a>
+              <a class="nav-link">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#" onclick="change_page_resume()">Contact Me</a>
+              <a class="nav-link" href="#" onclick="change_page_work_terms()">Work Terms</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="change_page_resume()">Resume</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" onclick="change_page_contact()">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -61,16 +113,43 @@
               <a class="nav-link disabled">(226) 374-5036</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" >sdenton@uoguelph.ca</a>
+              <a class="nav-link disabled">sdenton@uoguelph.ca</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
     <div class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="white" id="center">Made With Bootstrap 2019</div>
-      </div>
+      <div class="white-center">Made With Bootstrap 2019 - Hosted through GitHub Pages</div>
+    </div>
+  </footer>
 
-    <script src="app.js"></script>
-  </body>
+  <script src="js/app.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('workTermCard').hover(
+        function () {
+          $(this).animate({
+            marginTop: "-=1%",
+          }, 200);
+        },
+
+        function () {
+          $(this).animate({
+            marginTop: "0%",
+          }, 200);
+        }
+      );
+    });
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

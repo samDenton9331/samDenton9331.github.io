@@ -15,6 +15,10 @@ a {
   color: white;
 }
 
+.fullScreen {
+  height: 100%;
+}
+
 .button-panel {
   position: absolute;
   text-align: center;
@@ -160,6 +164,13 @@ hr {
   margin-right: auto;
 }
 
+.center-photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .team_photo {
   width: 50%;
   height: auto;
@@ -178,8 +189,15 @@ hr {
   text-align: center;
 }
 
-#center {
+.pageTitle {
   text-align: center;
+  margin-top: 10px;
+}
+
+.subTitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
 }
 
 .resume-pdf {
@@ -191,3 +209,45 @@ hr {
   margin: 20px 0;
 }
 
+.workTerm {
+  border: 1px solid rgba(0,0,0,.125);
+  
+}
+
+.card:hover {
+  -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+  box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+.workTermRow {
+  margin: auto;
+  text-align: center
+}
+
+.workTermCard {
+  width: 24rem;
+  margin: 30px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.content {
+  padding-bottom: 20px;
+  margin: 0px 30px;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+#coop3 h4, #coop3 li {
+  margin: 15px 0px;
+}
+
+#coop3 content {
+  margin-bottom: 15px;
+}

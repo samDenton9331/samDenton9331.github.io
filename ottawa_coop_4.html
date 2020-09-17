@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Latest compiled and minified CSS    -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Custom CSS End -->
+
+</head>
+
+<body>
+  <script>
+    document.body.className += " fade-out";
+  </script>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
+        </li>
+        <li class="nav-item disabled">
+          <a class="nav-link" href="#">Work Terms</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="change_page_resume()">Resume</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="change_page_contact()">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Samuel Denton</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="coop3" class="container">
+    <h4 class="pageTitle">Junior Cloud Software Developer</h4>
+    <h5 class="subTitle">Canada Border Services Agency</h5>
+    <hr />
+
+    <div class="content">
+
+      <h4>Abstract</h4>
+      <p>
+        Welcome to my final co-op work term report for my undergrad degree in Computer Science at the University of Guelph. My time in co-op has given me so much experience and allowed me to step into the world of having a software development degree. For my final co-op I once again went back to CBSA but on a new team called Mobile Border. I got hands-on experience working in the world of cloud computing using Amazon Web Services to develop back-end and front-end solutions. I hope to explain in this report the different technologies I got my hands on and the skill I learned throughout the process, and how I developed my abilities as a software developer.
+      </p>
+
+      <h4>Information about the Employer</h4>
+      <p>
+        The Employer I worked for was Canada Border Services Agency under Canada’s federal government. If you have ever travelled outside of Canada, you probably have experienced going through Customs upon entering back into Canada. CBSA is a federal law enforcement agency that primarily deals with border control, immigration enforcement and customs services. The agency uses many different technologies and software to carry out these tasks and help protect Canada  The team I worked for was the Mobile Border team which was focused and developing the backend for a new mobile app they hope to launch by the end of the year. 
+      </p>
+
+      <h4>Job Description</h4>
+
+      <p>
+        For this job I entered the world of cloud computing. I was very excited to work in this area as we are currently seeing a trend of more companies turning to cloud solutions. The cloud platform we used was Amazon Web Services (AWS). I got to experience using the AWS management console as well as writing template files in .yaml in order to spin up different AWS services and configure them to our project needs. I used a variety of services on AWS throughout my work-terms such as S3, Amazon Cognito, API Gateway, Lambda, and Elastic Beanstalk to host EC2 Instance.
+      </p>
+
+      <p>
+        For my job I had two different projects over the span of eight months. The first project was to take a semi-working web application called the Mobile Border Dashboard written in C++ and fix it. I made a choice to restart the application using standard HTML with a NodeJS backend. I was excited they gave me the chance to choose the language and trusted me enough with the decision. I used this technology because I was very comfortable using it in CIS 2750 and 3750 and the project had to be done under a short deadline. The second project was building another web app as well, along with an API that interacted with the same PostgreSQL database. For this project, which was called Question Bank Management, the team and I wanted to explore new technologies, so we decided to try React JS. The idea behind this project was to develop a way to send dynamic questions with optional answers to client apps needing them. The web app was going to be where we created the question contents, and then the separate API would be where a client could call and retrieve a given set of questions. I had never done react before this point, so I had to learn as I go and got to be the pilot project for React on out team. When writing the backend for this application I gained skills developing and designing a database from scratch. I was taught by our tech lead how to design a schema and launch a Relational Database Service on AWS. I learned so much about writing SQL and using java and JavaScript to connect to the RDS and manipulates its data. This job was a great way to end my co-op and pointed me in the direction of what kind of career I would want in the future.
+      </p>
+
+      <div style="text-align: center;">
+        <img style="width: 40%" src="images/react.jpg">
+        <img style="width: 40%" src="images/postgresql_logo-555px.png">
+      </div>      
+      
+      <h4>Goals</h4>
+      <p>During my co-ops I created and set goals for myself, below are the goals I set and my reflections on them.</p>
+      <h5>Winter 2020 Goals</h5>
+      <ol>
+        <li>
+          Become a confident developer by working on complex tasks and complete them in a timely fashion          
+        </li>
+        <li>
+          Gain experience in UI design by designing a web application for the project my team is currently working on. Deliver a quality working product to the client.
+        </li>
+        <li> 
+          Use my knowledge of git and other newer technologies to help modernize work and produce better working products to the real world.
+        </li>
+      </ol>
+
+      <h5>Summer 2020 Goals</h5>
+      <ol>
+        <li>
+          Focus on each piece of code and how it could be tested. Learn from other coders on my team and from additional resources. Try to the best of my ability to produce clean readable code!
+        </li>
+        <li>
+          Build a well-rounded API and web app for the project I am currently working on
+        </li>
+        <li> 
+          Learn how to work effectively in a remote environment due to COVID-19
+        </li>
+      </ol>
+
+      <p><strong>Did you develop goals relating to your job tasks?</strong></p>
+      <p>
+        When creating my goals, I developed them specifically for my job tasks. I was working with UI’s and API so I wanted to shape my goals somewhat around that. My job came at a unique time because this was the first pilot project CBSA was doing on the cloud, so everything was very new. I found my school knowledge of things such as git and Nodejs very useful in helping my team because they had never done these before but needed to for the cloud. I wanted to make my goals related to my job tasks so I could achieve see my goals and my tasks be completed at the same time.
+      </p>
+      <p><strong>What skills did you want to learn? How will these tasks benefit your next work experience?</strong></p>
+      <p>
+        The major skills I wanted to learn was React JS and database design. I think I successfully gained these skills throughout my work term by completing QBM. While doing QBM I designed the entire database and wrote all the scripts to create it in PostgreSQL. I then created an entire web app using React JS to manage said database. I did significant amounts of research on React JS to teach myself and I believe I gained a well understanding of the framework. Both skills are going to benefit my future work. Developers that have database knowledge along with backend and front-end knowledge are very much needed as more often then not a piece of software has these components.
+      </p>
+      <p><strong>What technologies did you want to work with and why?</strong></p>
+      <p>
+        Like above, I wanted to work with technologies such as React JS and PostgreSQL. I also wanted to work with a cloud technology such as AWS because of the current popularity with Cloud Computing. React JS allowed my look to change on how you can implement web-apps rather then the standard html page. The biggest think I wanted to work with is PostgreSQL because that was brand new to me. I got to see the entire process from starting from nothing and building the schema to building separate code to insert data into the tables. That was my favorite part of co-op, and being able to walk out of the job with 2 completely working products was the icing on the cake.
+      </p>
+
+      <p><strong>Reflecting on your goals/learning outcomes, what goals did you complete? What goals were you not successful in completing and why?</strong></p>
+      <p>
+        Starting with my work-term goals from the winter, I believe I accomplished all my goals I set for the term. I was able to complete all the tasks given to me and achieve more then I hoped for. I found myself helping my team a lot more then in past co-ops and found skills that I developed on my own and through school really come into play. I found it interesting that some people on the team had not used technologies like Git so it was satisfying being able to teach them and see my team transition from what they were doing before into git. I gained experience by designing and implement two UI’s and getting positive feedback from management and clients which led me to the completing my second goal in the winter. I worked hard finding out what the client needed and was able to implement it into our code very successfully. I was excited with how my winter goals went and it boosted the confidence I had going into the summer work-term.
+      </p>
+      <p>
+        Going into the summer semester of work it was something completely different then before given the pandemic of COVID-19. For myself, work did not change too much other then the fact I was working from home. I was working a lot on the backend portions of our project which had many different functions for our different API requests. I wanted to develop my skills in Unit testing during the development of this project which led me to my first goal. However, I don’t think I completed this goal to the best of my abilities. I found unit testing hard to do given tight deadlines and the need to deliver products. Apart from the unit testing I found myself able to work very effectively while working from home. I made this my second goal for the summer because it could happen a lot as we look into the future. In fact, I found myself more productive at home versus in the office because I was absent from distractions and able to work around my schedule with ease. For my final goal, I believe I achieved the goal of coding and finishing the API for QBM. Before I left my co-op I saw people using my API in their development activities with little help which made me feel very positive. I will continue to set goals in my future jobs and striving towards completing them!
+
+      </p>
+
+      <h4>Acknowledgements</h4>
+      <p>
+        My time at CBSA was a pleasure and I learned a lot in my short time. It was interesting transitioning from the workplace to working from home given the current situation of COVID-19. I was able to experience working from home which I enjoyed. I gained experience managing my time and being more self-sufficient when trying to solve problems. My team allowed me to grow by giving me a large responsibly for our projects and made me feel like I was making a positive impact. I gained confidence by completing the project and watching other development teams in the agency use it. I want to thank my team lead and my manager with trusting me with this responsibility and guiding me when I needed., and my co-workers for working with me and teaching me all they could.
+      </p>
+
+    </div>
+  </div>
+
+  <footer>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="change_page_home()">Home</a>
+          </li>
+          <li class="nav-item disabled">
+            <a class="nav-link">Work Terms</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="change_page_resume()">Resume</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="change_page_resume()">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link disabled">Samuel Denton</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">(226) 374-5036</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">sdenton@uoguelph.ca</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="white-center">Made With Bootstrap 2019 - Hosted through GitHub Pages</div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>
